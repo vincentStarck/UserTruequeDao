@@ -4,7 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>vincent.starck.company</groupId>
-    <version>0.1.0</version>
+  <artifactId>usuarioService</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -41,5 +42,5 @@
         </plugins>
     </build>
 
-    <artifactId>usuario-service</artifactId>
+    
 </project>
