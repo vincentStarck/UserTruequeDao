@@ -6,18 +6,18 @@ public class Category {
 	
 	@Id
 	private String id;
-	private String key;
+	private int key;
 	private String description;
 	/**
 	 * @return the key
 	 */
-	public String getKey() {
+	public int getKey() {
 		return key;
 	}
 	/**
 	 * @param key the key to set
 	 */
-	public void setKey(String key) {
+	public void setKey(int key) {
 		this.key = key;
 	}
 	/**
