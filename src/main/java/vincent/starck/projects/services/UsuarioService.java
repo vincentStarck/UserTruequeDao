@@ -1,15 +1,14 @@
-package services;
+package vincent.starck.projects.services;
 
 import java.util.List;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
-
-import hello.User;
+import vincent.starck.projects.model.User;
 
 
 public interface UsuarioService extends MongoRepository<User, String> {
 
-	public User findByFirstName(String firstName);
+	public User findById(String firstName);
 
 	public List<User> findByLastName(String lastName);
 
