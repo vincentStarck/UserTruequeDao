@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>vincent.starck.company</groupId>
-  <artifactId>usuarioService</artifactId>
+  <artifactId>usuarioServiceTrueque</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <parent>
