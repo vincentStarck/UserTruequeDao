@@ -1,24 +1,25 @@
 package vincent.starck.projects.model;
 
 import java.util.Date;
+import java.util.List;
 
 public class Item {
-	
-	private String name;
+	private String description; 
 	private Date createDate;
 	private Date updateDate;
-	private String base64Data;
+	private List<ItemTrueque> itemsTrueque;
+	private Category category;
 	/**
-	 * @return the name
+	 * @return the description
 	 */
-	public String getName() {
-		return name;
+	public String getDescription() {
+		return description;
 	}
 	/**
-	 * @param name the name to set
+	 * @param description the description to set
 	 */
-	public void setName(String name) {
-		this.name = name;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 	/**
 	 * @return the createDate
@@ -45,18 +46,30 @@ public class Item {
 		this.updateDate = updateDate;
 	}
 	/**
-	 * @return the base64Data
+	 * @return the itemsTrueque
 	 */
-	public String getBase64Data() {
-		return base64Data;
+	public List<ItemTrueque> getItemsTrueque() {
+		return itemsTrueque;
 	}
 	/**
-	 * @param base64Data the base64Data to set
+	 * @param itemsTrueque the itemsTrueque to set
 	 */
-	public void setBase64Data(String base64Data) {
-		this.base64Data = base64Data;
+	public void setItemsTrueque(List<ItemTrueque> itemsTrueque) {
+		this.itemsTrueque = itemsTrueque;
 	}
-	
+	/**
+	 * @return the category
+	 */
+	public Category getCategory() {
+		return category;
+	}
+	/**
+	 * @param category the category to set
+	 */
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+
 	
 
 }

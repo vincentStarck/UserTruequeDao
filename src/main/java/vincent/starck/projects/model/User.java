@@ -20,6 +20,8 @@ public class User {
 	private String lastName;
 	private String middleName;	
 	private String email;
+	private String password;
+	private String phone;
 	private List<Item> items;
 	
 	/**
@@ -119,6 +121,30 @@ public class User {
 	 */
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	/**
+	 * @return the password
+	 */
+	public String getPassword() {
+		return password;
+	}
+	/**
+	 * @param password the password to set
+	 */
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	/**
+	 * @return the phone
+	 */
+	public String getPhone() {
+		return phone;
+	}
+	/**
+	 * @param phone the phone to set
+	 */
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
 	
