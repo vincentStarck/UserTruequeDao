@@ -1,17 +1,77 @@
 package vincent.starck.projects.model;
 
+import java.util.Date;
+import java.util.List;
+
 import org.springframework.data.annotation.Id;
 
+/**
+ * @author vincent
+ * Class that model the TruequeApp's user
+ */
 public class User {
 
 	@Id
 	private String id;
+	private String status;
+	private Date createDate;
+	private Date updateDate;
 	private String firstName;
 	private String lastName;
-	private String middleName;
+	private String middleName;	
 	private String email;
+	private List<Item> items;
+	
+	/**
+	 * @return the status
+	 */
+	public String isStatus() {
+		return status;
+	}
+	/**
+	 * @param status the status to set
+	 */
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	/**
+	 * @return the createDate
+	 */
+	public Date getCreateDate() {
+		return createDate;
+	}
+	/**
+	 * @param createDate the createDate to set
+	 */
+	public void setCreateDate(Date createDate) {
+		this.createDate = createDate;
+	}
+	/**
+	 * @return the updateDate
+	 */
+	public Date getUpdateDate() {
+		return updateDate;
+	}
+	/**
+	 * @param updateDate the updateDate to set
+	 */
+	public void setUpdateDate(Date updateDate) {
+		this.updateDate = updateDate;
+	}
 	
 	
+	/**
+	 * @return the items
+	 */
+	public List<Item> getItems() {
+		return items;
+	}
+	/**
+	 * @param items the items to set
+	 */
+	public void setItems(List<Item> items) {
+		this.items = items;
+	}
 	/**
 	 * @return the firstName
 	 */

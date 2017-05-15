@@ -21,13 +21,13 @@ public class UserController {
 	@Autowired
 	private UsuarioService repository;
 	
-	   @RequestMapping(value = "/user",method=RequestMethod.POST)
+	   @RequestMapping(value = "/newUser",method=RequestMethod.POST)
 	    public @ResponseBody void  createUser(@RequestBody User user) {
 		   repository.save(user);
 	        
 	    }
 	   
-	   @RequestMapping(value="/getUser/{id}",method=RequestMethod.GET)
+	   @RequestMapping(value="/user/{id}",method=RequestMethod.GET)
 	   public @ResponseBody User getUserById(@PathVariable String id){
 		   System.out.println(id);
 		   return repository.findById(id);
