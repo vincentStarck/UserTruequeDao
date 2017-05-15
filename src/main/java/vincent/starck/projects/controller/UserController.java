@@ -11,10 +11,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.google.gson.Gson;
+
 import vincent.starck.projects.services.UsuarioService;
 import vincent.starck.projects.model.User;
-//import java.util.logging.Level;
-//import java.util.logging.Logger;
+
 
 
 @Controller
@@ -30,8 +32,8 @@ public class UserController {
 	   @RequestMapping(value = "/newUser",method=RequestMethod.POST)
 	    public @ResponseBody void  createUser(@RequestBody User user) {
 		   LOGGER.info("Add new user");
-		   repository.save(user);
-		   LOGGER.info("Add new user ok : {}",user );
+		   repository.save(user);		   
+		   LOGGER.info("Add new user ok: \n{}",new Gson().toJson(user));
 	        
 	    }
 	   
