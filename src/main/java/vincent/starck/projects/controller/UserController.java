@@ -56,5 +56,8 @@ public class UserController {
 		LOGGER.info("Add Item success: \n{}", new Gson().toJson(user.getItems().get(0)));
 
 	}
+	
+	
+	
 
 }
